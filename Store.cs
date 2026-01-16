@@ -1,26 +1,28 @@
 ﻿namespace knightmoves;
 public class Store
 {
-    public string PriceCheck("price"){
-        if (price == 1.50){
+    public string PriceCheck(double price)
+    {
+        if (price == 1.50)
+        {
             return "match";
         }
-
-        if (price == 1.00){
+        if (price == 1.00)
+        {
             return "";
         }
-        
+        return "";
     }
 
-    public string GuessNumber("guess"){
-        if (guess != 25){
+    public string GuessNumber(int guess)
+    {
+        if (guess != 25)
+        {
             return "not it";
         }
-
-        if (guess == 25){
-            return "";
-        }
+        return "";
     }
     
 }
+
 
